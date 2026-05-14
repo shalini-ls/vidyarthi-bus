@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "routes": {
+      ".read": true,
+      ".write": true
+    },
+    "students": {
+      ".read": false,
+      "$studentId": {
+        ".write": "auth == null || auth.uid == $studentId"
+      }
+    },
+    "crowd_reports": {
+      ".read": true,
+      ".write": true
+    },
+    "alt_transport": {
+      ".read": true,
+      ".write": true
+    },
+    "seeded": {
+      ".read": true,
+      ".write": true
+    },
+    "announcements": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}
